@@ -18,15 +18,6 @@ namespace lep.Controllers
             new Room() { Id = 4, Name = "Room4", Capacity = 6},
             new Room() { Id = 5, Name = "Room5", Capacity = 20}
         };
-
-        public static List<Reservation> reservations = new List<Reservation>()
-        {
-            new Reservation() { Id = 1, RoomId = 1, OrganizerName = "Jan Nowak", Topic = "NAI", Date = new DateOnly(2026,4,30), StartTime = new TimeOnly(10,15), EndTime = new TimeOnly(12,30)},
-            new Reservation() { Id = 2, RoomId = 1, OrganizerName = "Adam Kowalski", Topic = "APBD", Date = new DateOnly(2026,4,30), StartTime = new TimeOnly(12,45), EndTime = new TimeOnly(14,00)},
-            new Reservation() { Id = 3, RoomId = 2, OrganizerName = "Jan Nowak", Topic = "PSM", Date = new DateOnly(2026,4,24), StartTime = new TimeOnly(10,15), EndTime = new TimeOnly(12,30)},
-            new Reservation() { Id = 4, RoomId = 3, OrganizerName = "Adam Nowak", Topic = "APBD", Date = new DateOnly(2026,4,30), StartTime = new TimeOnly(10,15), EndTime = new TimeOnly(12,30)},
-            new Reservation() { Id = 5, RoomId = 5, OrganizerName = "Jan Kowalski", Topic = "PRI", Date = new DateOnly(2026,5,1), StartTime = new TimeOnly(10,15), EndTime = new TimeOnly(12,30)}
-        };
         
         // GET api/rooms
         [HttpGet]
