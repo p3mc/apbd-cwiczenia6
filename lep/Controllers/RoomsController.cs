@@ -19,6 +19,9 @@ namespace lep.Controllers
             new Room() { Id = 5, Name = "Room5", Capacity = 20}
         };
         
+        public static int NextRoomId()
+            => rooms.Count == 0 ? 1 : rooms.Max(r => r.Id) + 1;
+        
         // GET api/rooms
         [HttpGet]
         public IActionResult Get([FromQuery] int? minCapacity = 0)
